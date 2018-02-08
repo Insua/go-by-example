@@ -3,10 +3,10 @@ package main
 import "fmt"
 import "time"
 
-func main()  {
+func main() {
 
 	i := 2
-	fmt.Println("Write ", i," as ")
+	fmt.Println("Write ", i, " as ")
 	switch i {
 	case 1:
 		fmt.Println("one")
@@ -17,7 +17,7 @@ func main()  {
 	}
 
 	switch time.Now().Weekday() {
-	case time.Saturday,time.Sunday:
+	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
 	default:
 		fmt.Println("It's a weekday")
@@ -38,7 +38,7 @@ func main()  {
 		case int:
 			fmt.Println("I'm an int")
 		default:
-			fmt.Println("Don't know type %T\n",t)
+			fmt.Println("Don't know type %T\n", t)
 		}
 	}
 	whatAmI(true)
